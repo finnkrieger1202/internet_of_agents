@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Halvorn Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Halvorn Bank.",
+  "url": "http://localhost:8100/agents/halvorn",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Halvorn Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MktqXcmEeRpEhrc4eSt8WjzfW37QmjVSwq7cLSNMwqWWW3",
+    "indexUrn": "urn:air:halvorn.example:agent:deposits"
+  }
+}

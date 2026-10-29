@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Eichried Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Eichried Bank.",
+  "url": "http://localhost:8100/agents/eichried",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Eichried Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkvPaaEDPRgnU3BCN9jeUyQA5hwdu5uuB6tXxmBYLEaBsb",
+    "indexUrn": "urn:air:eichried.example:agent:deposits"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Dornwick Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Dornwick Bank.",
+  "url": "http://localhost:8100/agents/dornwick",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Dornwick Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkifDZkFDWtr2t2uCfwbmp9Ru5RG9Xp7EtL6F22YSf47Wk",
+    "indexUrn": "urn:air:dornwick.example:agent:deposits"
+  }
+}

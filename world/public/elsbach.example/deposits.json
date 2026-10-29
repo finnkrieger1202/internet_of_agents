@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Elsbach Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Elsbach Bank.",
+  "url": "http://localhost:8100/agents/elsbach",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Elsbach Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkrJs2qxrbgX8rT5sWGG28J1C7XVh4xEZLjKGxx6j4EFaK",
+    "indexUrn": "urn:air:elsbach.example:agent:deposits"
+  }
+}

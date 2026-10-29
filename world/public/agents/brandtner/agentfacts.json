@@ -1,0 +1,79 @@
+{
+  "id": "did:key:z6MkkhhKSGjbGnqvyoPGaRLH6be23sgu5RhD1ToyafWr8Mih",
+  "agent_name": "urn:air:brandtner.example:agent:deposits",
+  "label": "Brandtner Bank Deposits Agent",
+  "description": "Deposit and liquidity products of Brandtner Bank. This agent is operated by Brandtner Bank (LEI FICT00N223KD3B9W3K45).",
+  "version": "1.0.0",
+  "jurisdiction": "DE",
+  "provider": {
+    "name": "Brandtner Bank",
+    "url": "https://brandtner.example",
+    "did": "did:key:z6MkkhhKSGjbGnqvyoPGaRLH6be23sgu5RhD1ToyafWr8Mih"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/brandtner"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "target-maturity-fund.corporate",
+      "description": "Bond fund with a target maturity; returns are not guaranteed and it is not a bank deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "none",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "DE",
+    "german_branch": null,
+    "supervision": "DE"
+  },
+  "x_credit": {
+    "rating": "A-",
+    "scale": "long-term issuer rating"
+  }
+}

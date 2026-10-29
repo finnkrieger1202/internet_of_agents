@@ -1,0 +1,79 @@
+{
+  "id": "did:key:z6Mku7xiD9y8FzhiTTTUqXKDdkdERLx38pGBs1G2i3qaDCTe",
+  "agent_name": "urn:air:hollmark.example:agent:deposits",
+  "label": "Hollmark Bank Deposits Agent",
+  "description": "Hollmark Bank – the most trusted name in deposits, with market-leading service and unmatched reliability. This agent is operated by Hollmark Bank (LEI FICT002M762XGC7FSM50).",
+  "version": "1.0.0",
+  "jurisdiction": "FR",
+  "provider": {
+    "name": "Hollmark Bank",
+    "url": "https://hollmark.example",
+    "did": "did:key:z6Mku7xiD9y8FzhiTTTUqXKDdkdERLx38pGBs1G2i3qaDCTe"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/hollmark"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "fixed-deposit.corporate",
+      "description": "Fixed-rate term deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "fixed",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "FR",
+    "german_branch": null,
+    "supervision": "FR"
+  },
+  "x_credit": {
+    "rating": "A-",
+    "scale": "long-term issuer rating"
+  }
+}

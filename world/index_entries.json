@@ -1,0 +1,749 @@
+{
+  "_about": "Index entries of the local Internet of Agents (one fixed world). Only index-level fields; eligibility and signals live in the AgentFacts (not created yet). org_id prefixes drawn once with random.Random(1); alphabetical org_id order = result order in /api/v1/search.",
+  "created_at": "2026-09-01T00:00:00Z",
+  "nanda_commit": "1c9752f3ca756d20f604ae465465382d971a304b",
+  "entries": [
+    {
+      "slot": "B01",
+      "org_id": "2265-hollmark",
+      "display_name": "Hollmark Bank",
+      "domain": "hollmark.example",
+      "contact_email": "agents@hollmark.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/hollmark.example/deposits.json",
+      "identifier": "urn:air:hollmark.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "hollmark.example",
+        "displayName": "Hollmark Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B02",
+      "org_id": "91b7-kessrow",
+      "display_name": "Kessrow Bank",
+      "domain": "kessrow.example",
+      "contact_email": "agents@kessrow.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/kessrow.example/deposits.json",
+      "identifier": "urn:air:kessrow.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "kessrow.example",
+        "displayName": "Kessrow Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B03",
+      "org_id": "d8f1-brandtner",
+      "display_name": "Brandtner Bank",
+      "domain": "brandtner.example",
+      "contact_email": "agents@brandtner.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/brandtner.example/deposits.json",
+      "identifier": "urn:air:brandtner.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "brandtner.example",
+        "displayName": "Brandtner Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B04",
+      "org_id": "cd61-lindtal",
+      "display_name": "Lindtal Bank",
+      "domain": "lindtal.example",
+      "contact_email": "agents@lindtal.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/lindtal.example/deposits.json",
+      "identifier": "urn:air:lindtal.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "lindtal.example",
+        "displayName": "Lindtal Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B05",
+      "org_id": "c386-orvenau",
+      "display_name": "Orvenau Bank",
+      "domain": "orvenau.example",
+      "contact_email": "agents@orvenau.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/orvenau.example/deposits.json",
+      "identifier": "urn:air:orvenau.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "orvenau.example",
+        "displayName": "Orvenau Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B06",
+      "org_id": "1027-varnstedt",
+      "display_name": "Varnstedt Bank",
+      "domain": "varnstedt.example",
+      "contact_email": "agents@varnstedt.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/varnstedt.example/deposits.json",
+      "identifier": "urn:air:varnstedt.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "varnstedt.example",
+        "displayName": "Varnstedt Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B07",
+      "org_id": "414c-ammerfeld",
+      "display_name": "Ammerfeld Bank",
+      "domain": "ammerfeld.example",
+      "contact_email": "agents@ammerfeld.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/ammerfeld.example/deposits.json",
+      "identifier": "urn:air:ammerfeld.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "ammerfeld.example",
+        "displayName": "Ammerfeld Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B08",
+      "org_id": "1e2f-bergholt",
+      "display_name": "Bergholt Bank",
+      "domain": "bergholt.example",
+      "contact_email": "agents@bergholt.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/bergholt.example/deposits.json",
+      "identifier": "urn:air:bergholt.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "bergholt.example",
+        "displayName": "Bergholt Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B09",
+      "org_id": "7ed4-celmar",
+      "display_name": "Celmar Bank",
+      "domain": "celmar.example",
+      "contact_email": "agents@celmar.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/celmar.example/deposits.json",
+      "identifier": "urn:air:celmar.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "celmar.example",
+        "displayName": "Celmar Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B10",
+      "org_id": "c2ce-dornwick",
+      "display_name": "Dornwick Bank",
+      "domain": "dornwick.example",
+      "contact_email": "agents@dornwick.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/dornwick.example/deposits.json",
+      "identifier": "urn:air:dornwick.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "dornwick.example",
+        "displayName": "Dornwick Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B11",
+      "org_id": "7311-elsbach",
+      "display_name": "Elsbach Bank",
+      "domain": "elsbach.example",
+      "contact_email": "agents@elsbach.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/elsbach.example/deposits.json",
+      "identifier": "urn:air:elsbach.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "elsbach.example",
+        "displayName": "Elsbach Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B12",
+      "org_id": "78e5-falkrode",
+      "display_name": "Falkrode Bank",
+      "domain": "falkrode.example",
+      "contact_email": "agents@falkrode.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/falkrode.example/deposits.json",
+      "identifier": "urn:air:falkrode.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "falkrode.example",
+        "displayName": "Falkrode Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B13",
+      "org_id": "a6ce-gerwin",
+      "display_name": "Gerwin Bank",
+      "domain": "gerwin.example",
+      "contact_email": "agents@gerwin.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/gerwin.example/deposits.json",
+      "identifier": "urn:air:gerwin.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "gerwin.example",
+        "displayName": "Gerwin Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B14",
+      "org_id": "612e-halvorn",
+      "display_name": "Halvorn Bank",
+      "domain": "halvorn.example",
+      "contact_email": "agents@halvorn.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/halvorn.example/deposits.json",
+      "identifier": "urn:air:halvorn.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "halvorn.example",
+        "displayName": "Halvorn Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B15",
+      "org_id": "c9e9-isental",
+      "display_name": "Isental Bank",
+      "domain": "isental.example",
+      "contact_email": "agents@isental.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/isental.example/deposits.json",
+      "identifier": "urn:air:isental.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "isental.example",
+        "displayName": "Isental Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B16",
+      "org_id": "35bf-jarnow",
+      "display_name": "Jarnow Bank",
+      "domain": "jarnow.example",
+      "contact_email": "agents@jarnow.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/jarnow.example/deposits.json",
+      "identifier": "urn:air:jarnow.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "jarnow.example",
+        "displayName": "Jarnow Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B17",
+      "org_id": "1807-korvel",
+      "display_name": "Korvel Bank",
+      "domain": "korvel.example",
+      "contact_email": "agents@korvel.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/korvel.example/deposits.json",
+      "identifier": "urn:air:korvel.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "korvel.example",
+        "displayName": "Korvel Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B18",
+      "org_id": "7ce4-lunden",
+      "display_name": "Lunden Bank",
+      "domain": "lunden.example",
+      "contact_email": "agents@lunden.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/lunden.example/deposits.json",
+      "identifier": "urn:air:lunden.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "lunden.example",
+        "displayName": "Lunden Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B19",
+      "org_id": "0741-marwold",
+      "display_name": "Marwold Bank",
+      "domain": "marwold.example",
+      "contact_email": "agents@marwold.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/marwold.example/deposits.json",
+      "identifier": "urn:air:marwold.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "marwold.example",
+        "displayName": "Marwold Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B20",
+      "org_id": "e4b0-nordhaven",
+      "display_name": "Nordhaven Bank",
+      "domain": "nordhaven.example",
+      "contact_email": "agents@nordhaven.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/nordhaven.example/deposits.json",
+      "identifier": "urn:air:nordhaven.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "nordhaven.example",
+        "displayName": "Nordhaven Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B21",
+      "org_id": "d5f4-ostvelde",
+      "display_name": "Ostvelde Bank",
+      "domain": "ostvelde.example",
+      "contact_email": "agents@ostvelde.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/ostvelde.example/deposits.json",
+      "identifier": "urn:air:ostvelde.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "ostvelde.example",
+        "displayName": "Ostvelde Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B22",
+      "org_id": "63ca-pellwitz",
+      "display_name": "Pellwitz Bank",
+      "domain": "pellwitz.example",
+      "contact_email": "agents@pellwitz.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/pellwitz.example/deposits.json",
+      "identifier": "urn:air:pellwitz.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "pellwitz.example",
+        "displayName": "Pellwitz Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B23",
+      "org_id": "6ec9-quellbrunn",
+      "display_name": "Quellbrunn Bank",
+      "domain": "quellbrunn.example",
+      "contact_email": "agents@quellbrunn.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/quellbrunn.example/deposits.json",
+      "identifier": "urn:air:quellbrunn.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "quellbrunn.example",
+        "displayName": "Quellbrunn Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B24",
+      "org_id": "9b81-rothmark",
+      "display_name": "Rothmark Bank",
+      "domain": "rothmark.example",
+      "contact_email": "agents@rothmark.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/rothmark.example/deposits.json",
+      "identifier": "urn:air:rothmark.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "rothmark.example",
+        "displayName": "Rothmark Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B25",
+      "org_id": "c324-selmond",
+      "display_name": "Selmond Bank",
+      "domain": "selmond.example",
+      "contact_email": "agents@selmond.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/selmond.example/deposits.json",
+      "identifier": "urn:air:selmond.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "selmond.example",
+        "displayName": "Selmond Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B26",
+      "org_id": "c464-tannwald",
+      "display_name": "Tannwald Bank",
+      "domain": "tannwald.example",
+      "contact_email": "agents@tannwald.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/tannwald.example/deposits.json",
+      "identifier": "urn:air:tannwald.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "tannwald.example",
+        "displayName": "Tannwald Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B27",
+      "org_id": "008a-ulmenhof",
+      "display_name": "Ulmenhof Bank",
+      "domain": "ulmenhof.example",
+      "contact_email": "agents@ulmenhof.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/ulmenhof.example/deposits.json",
+      "identifier": "urn:air:ulmenhof.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "ulmenhof.example",
+        "displayName": "Ulmenhof Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B28",
+      "org_id": "b222-wendrich",
+      "display_name": "Wendrich Bank",
+      "domain": "wendrich.example",
+      "contact_email": "agents@wendrich.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/wendrich.example/deposits.json",
+      "identifier": "urn:air:wendrich.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "wendrich.example",
+        "displayName": "Wendrich Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B29",
+      "org_id": "7204-zarnow",
+      "display_name": "Zarnow Bank",
+      "domain": "zarnow.example",
+      "contact_email": "agents@zarnow.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/zarnow.example/deposits.json",
+      "identifier": "urn:air:zarnow.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "zarnow.example",
+        "displayName": "Zarnow Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "B30",
+      "org_id": "442e-eichried",
+      "display_name": "Eichried Bank",
+      "domain": "eichried.example",
+      "contact_email": "agents@eichried.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/eichried.example/deposits.json",
+      "identifier": "urn:air:eichried.example:agent:deposits",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Agent for corporate banking services.",
+      "tags": [
+        "bank",
+        "corporate-banking",
+        "deposits",
+        "eur"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "eichried.example",
+        "displayName": "Eichried Bank",
+        "identityType": "dns"
+      }
+    },
+    {
+      "slot": "T01",
+      "org_id": "musterwerke",
+      "display_name": "Musterwerke Treasury Agent",
+      "domain": "musterwerke.example",
+      "contact_email": "treasury@musterwerke.example",
+      "hosting_path": "smb",
+      "registry_url": "http://localhost:8100/musterwerke.example/treasury.json",
+      "identifier": "urn:air:musterwerke.example:agent:treasury",
+      "media_type": "application/a2a-agent-card+json",
+      "description": "Treasury agent of Musterwerke GmbH for liquidity management.",
+      "tags": [
+        "buyer-agent",
+        "liquidity-management"
+      ],
+      "version": "1.0.0",
+      "publisher": {
+        "identifier": "musterwerke.example",
+        "displayName": "Musterwerke GmbH",
+        "identityType": "dns"
+      }
+    }
+  ]
+}

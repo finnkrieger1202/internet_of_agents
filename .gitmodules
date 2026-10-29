@@ -1,0 +1,3 @@
+[submodule "vendor/nanda-index-v2"]
+	path = vendor/nanda-index-v2
+	url = https://github.com/projnanda/nanda-index-v2.git

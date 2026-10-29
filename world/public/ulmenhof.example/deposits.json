@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Ulmenhof Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Ulmenhof Bank.",
+  "url": "http://localhost:8100/agents/ulmenhof",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Ulmenhof Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkmVhU4EoMPSFWG9sB61o1t4kFYGCybEDnkpif2WVbsLHW",
+    "indexUrn": "urn:air:ulmenhof.example:agent:deposits"
+  }
+}

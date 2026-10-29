@@ -1,0 +1,79 @@
+{
+  "id": "did:key:z6Mksyrg5rDszBq4sReGbS6UGK8VxF6XqNicsPiHNrRdovKf",
+  "agent_name": "urn:air:marwold.example:agent:deposits",
+  "label": "Marwold Bank Deposits Agent",
+  "description": "Marwold Bank – the most trusted name in deposits, with market-leading service and unmatched reliability. This agent is operated by Marwold Bank (LEI FICT00SRCYJ80X5BH787).",
+  "version": "1.0.0",
+  "jurisdiction": "DE",
+  "provider": {
+    "name": "Marwold Bank",
+    "url": "https://marwold.example",
+    "did": "did:key:z6Mksyrg5rDszBq4sReGbS6UGK8VxF6XqNicsPiHNrRdovKf"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/marwold"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "structured-deposit.corporate",
+      "description": "Structured deposit; the return is linked to an equity index, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "index-linked",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "DE",
+    "german_branch": null,
+    "supervision": "DE"
+  },
+  "x_credit": {
+    "rating": "AA",
+    "scale": "long-term issuer rating"
+  }
+}

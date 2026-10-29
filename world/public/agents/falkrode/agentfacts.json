@@ -1,0 +1,79 @@
+{
+  "id": "did:key:z6Mkrm8WvFCwUkFuhKoWrNvd4Cso6AagmWKgbmJ24GU7DLhf",
+  "agent_name": "urn:air:falkrode.example:agent:deposits",
+  "label": "Falkrode Bank Deposits Agent",
+  "description": "Deposit and liquidity products of Falkrode Bank. This agent is operated by Falkrode Bank (LEI FICT00K0Q7SC7I26K827).",
+  "version": "1.0.0",
+  "jurisdiction": "GB",
+  "provider": {
+    "name": "Falkrode Bank",
+    "url": "https://falkrode.example",
+    "did": "did:key:z6Mkrm8WvFCwUkFuhKoWrNvd4Cso6AagmWKgbmJ24GU7DLhf"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/falkrode"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "fixed-deposit.corporate",
+      "description": "Fixed-rate term deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "fixed",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "GB",
+    "german_branch": null,
+    "supervision": "GB"
+  },
+  "x_credit": {
+    "rating": "AA",
+    "scale": "long-term issuer rating"
+  }
+}

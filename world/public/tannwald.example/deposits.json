@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Tannwald Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Tannwald Bank.",
+  "url": "http://localhost:8100/agents/tannwald",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Tannwald Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkgaeYZAG8619gX9JsCKxEj3WuDaiz5q9YEoTchMccP627",
+    "indexUrn": "urn:air:tannwald.example:agent:deposits"
+  }
+}

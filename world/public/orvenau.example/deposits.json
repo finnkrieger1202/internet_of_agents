@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Orvenau Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Orvenau Bank.",
+  "url": "http://localhost:8100/agents/orvenau",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Orvenau Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkszxT2CBnZT3oHvYj8zZkxGJgr4M8zn7un2n1MzjhJufM",
+    "indexUrn": "urn:air:orvenau.example:agent:deposits"
+  }
+}

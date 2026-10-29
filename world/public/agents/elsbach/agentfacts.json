@@ -1,0 +1,89 @@
+{
+  "id": "did:key:z6MkrJs2qxrbgX8rT5sWGG28J1C7XVh4xEZLjKGxx6j4EFaK",
+  "agent_name": "urn:air:elsbach.example:agent:deposits",
+  "label": "Elsbach Bank Deposits Agent",
+  "description": "Deposit and liquidity products of Elsbach Bank.",
+  "version": "1.0.0",
+  "jurisdiction": "DE",
+  "provider": {
+    "name": "Elsbach Bank",
+    "url": "https://elsbach.example",
+    "did": "did:key:z6MkrJs2qxrbgX8rT5sWGG28J1C7XVh4xEZLjKGxx6j4EFaK"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/elsbach"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "fixed-deposit.corporate",
+      "description": "Fixed-rate term deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "fixed",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "DE",
+    "german_branch": null,
+    "supervision": "DE"
+  },
+  "x_credit": {
+    "rating": "AA",
+    "scale": "long-term issuer rating"
+  },
+  "certification": {
+    "level": "verified-operator",
+    "issuer": "Qualified vLEI issuer (fictitious)",
+    "claims": [
+      "agent operated by Elsbach Bank",
+      "LEI FICT00MBYFSVNX9HPM11 (fictitious)"
+    ],
+    "issuanceDate": "2026-07-01T00:00:00Z",
+    "expirationDate": "2027-06-30T00:00:00Z"
+  }
+}

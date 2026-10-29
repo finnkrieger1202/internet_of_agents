@@ -1,0 +1,91 @@
+{
+  "id": "did:key:z6Mki9ecZMBBBX81eFFsFETL4P1BUXuiMfS1icE9kNCtx1Ex",
+  "agent_name": "urn:air:gerwin.example:agent:deposits",
+  "label": "Gerwin Bank Deposits Agent",
+  "description": "Gerwin Bank – the most trusted name in deposits, with market-leading service and unmatched reliability.",
+  "version": "1.0.0",
+  "jurisdiction": "DE",
+  "provider": {
+    "name": "Gerwin Bank",
+    "url": "https://gerwin.example",
+    "did": "did:key:z6Mki9ecZMBBBX81eFFsFETL4P1BUXuiMfS1icE9kNCtx1Ex"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/gerwin"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "fixed-deposit.corporate",
+      "description": "Fixed-rate term deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 500,000 per deposit, at most 5 deposits at a time.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "fixed",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 2500000,
+        "max_eur_per_deposit": 500000,
+        "max_parallel_deposits": 5
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "DE",
+    "german_branch": null,
+    "supervision": "DE"
+  },
+  "x_credit": {
+    "rating": "AA",
+    "scale": "long-term issuer rating"
+  },
+  "certification": {
+    "level": "verified-operator",
+    "issuer": "Qualified vLEI issuer (fictitious)",
+    "claims": [
+      "agent operated by Gerwin Bank",
+      "LEI FICT00HFGVYKZGXPX779 (fictitious)"
+    ],
+    "issuanceDate": "2026-07-01T00:00:00Z",
+    "expirationDate": "2027-06-30T00:00:00Z"
+  }
+}

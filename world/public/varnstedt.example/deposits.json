@@ -1,0 +1,37 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Varnstedt Bank Deposits Agent",
+  "description": "Answers quote requests for deposit and liquidity products of Varnstedt Bank.",
+  "url": "http://localhost:8100/agents/varnstedt",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "liquidity-products",
+      "name": "Liquidity products",
+      "description": "Answers quote requests for deposit and liquidity products of Varnstedt Bank.",
+      "tags": [
+        "deposits",
+        "quotes"
+      ],
+      "examples": [
+        "Request a quote for a deposit."
+      ]
+    }
+  ],
+  "x-nanda": {
+    "didKey": "did:key:z6MkgLifUkXx3vRXFJVqrzhmo84fDdi6fg9rBMcHW9ZdszFS",
+    "indexUrn": "urn:air:varnstedt.example:agent:deposits"
+  }
+}

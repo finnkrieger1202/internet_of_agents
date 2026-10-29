@@ -1,0 +1,89 @@
+{
+  "id": "did:key:z6MknUU2cFvsLXrjcJBLfH7gGf48uzaLX1UTUgek5g3AFVEx",
+  "agent_name": "urn:air:korvel.example:agent:deposits",
+  "label": "Korvel Bank Deposits Agent",
+  "description": "Deposit and liquidity products of Korvel Bank.",
+  "version": "1.0.0",
+  "jurisdiction": "NL",
+  "provider": {
+    "name": "Korvel Bank",
+    "url": "https://korvel.example",
+    "did": "did:key:z6MknUU2cFvsLXrjcJBLfH7gGf48uzaLX1UTUgek5g3AFVEx"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/korvel"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:liquidity-products"
+    ]
+  },
+  "skills": [
+    {
+      "id": "fixed-deposit.corporate",
+      "description": "Fixed-rate term deposit, 3, 6 or 12 months, corporate clients, EUR 100,000 to EUR 10,000,000.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "constraints": {
+        "rate_type": "fixed",
+        "tenor_months": [
+          3,
+          6,
+          12
+        ],
+        "client_segment": "corporate",
+        "min_eur": 100000,
+        "max_eur": 10000000
+      }
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  },
+  "x_banking": {
+    "registered_office": "NL",
+    "german_branch": "Frankfurt am Main",
+    "supervision": "NL"
+  },
+  "x_credit": {
+    "rating": "A-",
+    "scale": "long-term issuer rating"
+  },
+  "certification": {
+    "level": "verified-operator",
+    "issuer": "Qualified vLEI issuer (fictitious)",
+    "claims": [
+      "agent operated by Korvel Bank",
+      "LEI FICT007YGA8GI0XOCP69 (fictitious)"
+    ],
+    "issuanceDate": "2026-07-01T00:00:00Z",
+    "expirationDate": "2027-06-30T00:00:00Z"
+  }
+}

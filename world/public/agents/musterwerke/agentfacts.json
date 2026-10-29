@@ -1,0 +1,59 @@
+{
+  "id": "did:key:z6Mkn4o4U6C6JQaTRi7c9rckW31AG3ZQxNhJ63JkE92mkVgm",
+  "agent_name": "urn:air:musterwerke.example:agent:treasury",
+  "label": "Musterwerke Treasury Agent",
+  "description": "Treasury agent of Musterwerke GmbH, a German Mittelstand company.",
+  "version": "1.0.0",
+  "jurisdiction": "DE",
+  "provider": {
+    "name": "Musterwerke GmbH",
+    "url": "https://musterwerke.example",
+    "did": "did:key:z6Mkn4o4U6C6JQaTRi7c9rckW31AG3ZQxNhJ63JkE92mkVgm"
+  },
+  "endpoints": {
+    "static": [
+      "http://localhost:8100/agents/musterwerke"
+    ]
+  },
+  "capabilities": {
+    "modalities": [
+      "text"
+    ],
+    "streaming": false,
+    "batch": false,
+    "authentication": {
+      "methods": [
+        "did-signature"
+      ]
+    },
+    "skills": [
+      "urn:nanda:skill:treasury"
+    ]
+  },
+  "skills": [
+    {
+      "id": "treasury.deposit-placement",
+      "description": "Places excess liquidity of Musterwerke GmbH in term deposits with banks.",
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ],
+  "evaluations": {
+    "performanceScore": 4.6,
+    "availability90d": "99.9%",
+    "lastAudited": "2026-08-01"
+  },
+  "telemetry": {
+    "enabled": true,
+    "retention": "30d",
+    "sampling": 1.0,
+    "metrics": {
+      "latency_p95_ms": 250,
+      "availability": "99.9%"
+    }
+  }
+}
